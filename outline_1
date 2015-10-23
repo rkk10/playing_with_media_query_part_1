@@ -66,6 +66,7 @@
                     flex-direction: column;
                 }
                 nav,article,aside{
+                    margin: 1px auto;
                     height: 50%;
                     width: 99vw;
                 }
