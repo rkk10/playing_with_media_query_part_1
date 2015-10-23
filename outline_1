@@ -8,59 +8,59 @@
                 margin: 0px;
                 box-sizing: border-box;
             }
-            header {
-    flex: 1;
-    height: 10vh;
-    background-color: skyblue;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-            section {
-    flex: 1;
-    height: 80vh;
-    display: flex;
-}
-            nav {
-    width: 50%;
-    background-color: yellow;
-}
-            article {
-    width: 50%;
-    background: greenyellow;
-}
-            section>article>section{
+            section>article>section, section>aside>section {
                 width: 90%;
-    height: 10%;
-    background-color: hotpink;
-    flex-direction: row;
-    justify-content: center;
-    margin: 5%;
-    position: relative;
-    top: 160px;
+                height: 10%;
+             }
+            header {
+                flex: 1;
+                height: 10vh;
+                background-color: skyblue;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+            }
+            section {
+                height: 80vh;
+                display: flex;
+            }
+            nav {
+                width: 50%;
+                background-color: yellow;
+            }
+            article {
+                width: 50%;
+                background: greenyellow;
+            }
+            section>article>section{   
+                background-color: hotpink;
+                margin: 5%;
             }
             aside {
-    width: 50%;
-    background-color: #F9C86E;
-}
-            section>aside>section{
-                width: 90%;
-    height: 10%;
-    background-color: brown;
-    flex-direction: row;
-    justify-content: center;
-    margin: 5%;
-    position: relative;
-    top: 160px;
+                width: 50%;
+                background-color: #F9C86E;
             }
-            nav,article,aside{
+            section>aside>section{
+                background-color: brown;
+                margin: 5%;
+            }
+           nav, article, aside {
                 margin: 1%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
             footer {
-    background-color: skyblue;
-    flex: 1;
-    height: 10vh;
-}
+                background-color: skyblue;
+                flex: 1;
+                height: 10vh;
+            }
+            @media screen and (max-width: 600px){
+                nav,article,aside{
+                    flex: 1;
+                }
+            }
         </style>
     </head>
     <body>
