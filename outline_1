@@ -11,6 +11,8 @@
             section>article>section, section>aside>section {
                 width: 90%;
                 height: 10%;
+                justify-content: center;
+                align-items: center;
              }
             header {
                 flex: 1;
@@ -57,11 +59,6 @@
                 height: 10vh;
             }
             @media screen and (max-width: 600px){
-                nav,article,aside{
-                    flex: 1;
-                }
-            }
-            @media screen and (max-width: 600px){
                 section{
                     flex-direction: column;
                 }
@@ -69,15 +66,19 @@
                     margin: 1px auto;
                     height: 50%;
                     width: 99vw;
-               }
-               h3{
+                }
+                h3{
                     font-size: 1rem;
                 }
                 h1{
                     font-size: 1.5
                         rem;
                 }
-            }    
+            }
+            h1,h3{
+                    font-family: 'Segoe UI';
+                    color: white;
+                }
         </style>
     </head>
     <body>
@@ -85,13 +86,13 @@
         <section>
             <nav></nav>
             <article>
-                <section></section>
-                <section></section>
+                <section><h3>One</h3></section>
+                <section><h3>Two</h3></section>
             </article>
             <aside>
-                <section></section>
-                <section></section>
-                <section></section>
+                <section><h3>Three</h3></section>
+                <section><h3>Four</h3></section>
+                <section><h3>Five</h3></section>
             </aside>
         </section>
         <footer></footer>
