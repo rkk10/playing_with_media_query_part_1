@@ -61,6 +61,14 @@
                     flex: 1;
                 }
             }
+            @media screen and (max-width: 600px){
+                section{
+                    flex-direction: column;
+                }
+                nav,article,aside{
+                    height: 50%;
+                    width: 99vw;
+                }
         </style>
     </head>
     <body>
