@@ -1,0 +1,73 @@
+/* line 4, C:/Users/Ravindra/Documents/GitHub/playing_with_media_query_part_1/web_layout_1/sass/styles.sass */
+
+* {
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+
+/* line 8, C:/Users/Ravindra/Documents/GitHub/playing_with_media_query_part_1/web_layout_1/sass/styles.sass */
+
+header,
+footer,
+section {
+	width: 98.7vw;
+	height: 100vh;
+}
+
+
+/* line 12, C:/Users/Ravindra/Documents/GitHub/playing_with_media_query_part_1/web_layout_1/sass/styles.sass */
+
+header {
+	background-color: #210e00;
+}
+
+
+/* line 16, C:/Users/Ravindra/Documents/GitHub/playing_with_media_query_part_1/web_layout_1/sass/styles.sass */
+
+section main {
+	width: 100%;
+	height: 100vh;
+	padding: 1px;
+	display: flex;
+}
+
+
+/* line 22, C:/Users/Ravindra/Documents/GitHub/playing_with_media_query_part_1/web_layout_1/sass/styles.sass */
+
+section main .box {
+	height: 100%;
+	width: 50%;
+	margin: 2px;
+	background-color: gray;
+}
+
+
+/* line 29, C:/Users/Ravindra/Documents/GitHub/playing_with_media_query_part_1/web_layout_1/sass/styles.sass */
+
+section main:nth-child(2) .box-2 {
+	height: 100%;
+	width: 50%;
+	margin: 2px;
+	background-color: #ff2323;
+}
+
+
+/* line 36, C:/Users/Ravindra/Documents/GitHub/playing_with_media_query_part_1/web_layout_1/sass/styles.sass */
+
+section main:nth-child(3) acticle {
+	height: 50%;
+	flex: 1;
+	background-color: antiquewhite;
+	margin: 2px;
+}
+
+
+/* line 42, C:/Users/Ravindra/Documents/GitHub/playing_with_media_query_part_1/web_layout_1/sass/styles.sass */
+
+footer {
+	background-color: #210e00;
+}
+
+
+/*# sourceMappingURL=styles.css.map */
